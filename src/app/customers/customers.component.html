@@ -1,0 +1,13 @@
+<menu></menu>
+<input type="button" value="Add Customer" (click)="onAdd(this.customers)" >
+<input type="button" value="Remove Customer" (click)="onRemove(custnum)">
+<input type="text" placeholder="id" [(ngModel)]="custnum">
+<h2>Customers</h2>
+<input type="text" placeholder="name" [(ngModel)]="customer.name">
+<input type="text" placeholder="email" [(ngModel)]="customer.email">
+<ul class="customer">
+    <li *ngFor="let customer of customers" >    
+        {{customer.id}} {{customer.name}} {{customer.email}}
+  </li>
+</ul>
+

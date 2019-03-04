@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SampleComponent } from './sample/sample.component';
 import { MenuComponent } from './menu/menu.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { CustomersComponent } from './customers/customers.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeroesComponent } from './heroes/heroes.component';
     DashboardComponent,
     SampleComponent,
     MenuComponent,
-    HeroesComponent
+    HeroesComponent,
+    CustomersComponent
   ],
   imports: [
     BrowserModule,

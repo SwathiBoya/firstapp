@@ -1,4 +1,11 @@
 <menu></menu>
-<p>
-  sample works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" >
+        <input type="text" name="remove" [(ngModel)]="deleteBtn">
+        <input type="button" class="fourth" value="Add" (click)="onAdd(this.button)">
+        <button class="fourth" *ngFor="let button of buttons">{{button.name}}</button>
+        <input type="button" value="Remove" class="fourth" (click)="onRemove(deleteBtn)">
+    </div>
+  </div>
+</div>

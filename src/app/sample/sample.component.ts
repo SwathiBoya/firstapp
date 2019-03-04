@@ -6,9 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sample.component.css']
 })
 export class SampleComponent implements OnInit {
-
+  buttons = [];
   constructor() { }
-
+  onAdd(){
+    var newButton ={name:""+(this.buttons.length)};
+    this.buttons.push(newButton);
+  }
+  onRemove(deleteBtn){
+    var deleteBtn1 =1;
+    this.buttons.splice(deleteBtn,deleteBtn1);
+  }
   ngOnInit() {
   }
 
